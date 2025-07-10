@@ -1,0 +1,9 @@
+language = "python3"
+entrypoint = "Battlesnake/main.py"
+
+[interpreter]
+command = "python3.8"
+
+[[ports]]
+localPort = 8000
+externalPort = 80

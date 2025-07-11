@@ -1,9 +1,16 @@
 language = "python3"
 entrypoint = "Battlesnake/main.py"
+modules = ["python-3.11"]
 
 [interpreter]
-command = "python3.8"
+command = "python3.11"
 
 [[ports]]
 localPort = 8000
 externalPort = 80
+
+[nix]
+packages = ["lsof", "openssh"]
+
+[env]
+PYTHONPATH = "."
